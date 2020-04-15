@@ -1,6 +1,6 @@
 # Datacatalog Tag Template Processor 
 
-[![CircleCI][1]][2] [![PyPi][5]]6] [![License][7]][7] [![Issues][8]][9]
+[![CircleCI][1]][2] [![PyPi][5]][6] [![License][7]][7] [![Issues][8]][9]
 
 A package to manage Google Cloud Data Catalog Tag Template scripts.
 
