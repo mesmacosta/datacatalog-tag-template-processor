@@ -117,7 +117,7 @@ datacatalog-tag-template-processor tag-templates delete --csv-file CSV_FILE_PATH
 [2]: https://circleci.com/gh/mesmacosta/datacatalog-tag-template-processor
 [3]: https://virtualenv.pypa.io/en/latest/
 [4]: https://github.com/mesmacosta/datacatalog-tag-template-processor/tree/master/sample-input/create-tag-templates
-[5]: https://img.shields.io/pypi/v/datacatalog-tag-template-processor.svg
+[5]: https://img.shields.io/pypi/v/datacatalog-tag-template-processor.svg?force_cache=true
 [6]: https://pypi.org/project/datacatalog-tag-template-processor/
 [7]: https://img.shields.io/github/license/mesmacosta/datacatalog-tag-template-processor.svg
 [8]: https://img.shields.io/github/issues/mesmacosta/datacatalog-tag-template-processor.svg
