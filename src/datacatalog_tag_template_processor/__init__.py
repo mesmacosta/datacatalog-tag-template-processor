@@ -1,4 +1,4 @@
-"""Top-level package for bq-properties-creator."""
+"""Top-level package for datacatalog_tag_template_processor."""
 
 from .datacatalog_tag_template_processor_cli import main  # noqa: F401
 
