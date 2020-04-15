@@ -98,7 +98,7 @@ described as follows:
 - Python + virtualenv
 
 ```bash
-datacatalog-tag-template-processor create --csv-file CSV_FILE_PATH
+datacatalog-tag-template-processor tag-templates create --csv-file CSV_FILE_PATH
 ```
 
 ### 4.3. Run the datacatalog-tag-template-processor script - Delete the Tag Templates
@@ -106,7 +106,7 @@ datacatalog-tag-template-processor create --csv-file CSV_FILE_PATH
 - Python + virtualenv
 
 ```bash
-datacatalog-tag-template-processor delete --csv-file CSV_FILE_PATH
+datacatalog-tag-template-processor tag-templates delete --csv-file CSV_FILE_PATH
 ```
 
 *TIPS* 
