@@ -1,6 +1,6 @@
 # Datacatalog Tag Template Processor 
 
-[![CircleCI][1]][2] [![PyPi][7]][8] [![License][9]][9] [![Issues][10]][11]
+[![CircleCI][1]][2] [![PyPi][5]]6] [![License][7]][7] [![Issues][8]][9]
 
 A package to manage Google Cloud Data Catalog Tag Template scripts.
 
@@ -110,17 +110,15 @@ datacatalog-tag-template-processor tag-templates delete --csv-file CSV_FILE_PATH
 ```
 
 *TIPS* 
-- [sample-input/create-tag-templates][6] for reference;
+- [sample-input/create-tag-templates][4] for reference;
 
 
 [1]: https://circleci.com/gh/mesmacosta/datacatalog-tag-template-processor.svg?style=svg
 [2]: https://circleci.com/gh/mesmacosta/datacatalog-tag-template-processor
 [3]: https://virtualenv.pypa.io/en/latest/
-[4]: https://github.com/mesmacosta/datacatalog-tag-template-processor/tree/master/sample-input/create-tags
-[5]: https://docs.google.com/spreadsheets/d/1bqeAXjLHUq0bydRZj9YBhdlDtuu863nwirx8t4EP_CQ
-[6]: https://github.com/mesmacosta/datacatalog-tag-template-processor/tree/master/sample-input/create-tag-templates
-[7]: https://img.shields.io/pypi/v/datacatalog-tag-template-processor.svg
-[8]: https://pypi.org/project/datacatalog-tag-template-processor/
-[9]: https://img.shields.io/github/license/mesmacosta/datacatalog-tag-template-processor.svg
-[10]: https://img.shields.io/github/issues/mesmacosta/datacatalog-tag-template-processor.svg
-[11]: https://github.com/mesmacosta/datacatalog-tag-template-processor/issues
+[4]: https://github.com/mesmacosta/datacatalog-tag-template-processor/tree/master/sample-input/create-tag-templates
+[5]: https://img.shields.io/pypi/v/datacatalog-tag-template-processor.svg
+[6]: https://pypi.org/project/datacatalog-tag-template-processor/
+[7]: https://img.shields.io/github/license/mesmacosta/datacatalog-tag-template-processor.svg
+[8]: https://img.shields.io/github/issues/mesmacosta/datacatalog-tag-template-processor.svg
+[9]: https://github.com/mesmacosta/datacatalog-tag-template-processor/issues
