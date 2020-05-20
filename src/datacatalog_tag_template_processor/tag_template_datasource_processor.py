@@ -26,7 +26,7 @@ class TagTemplateDatasourceProcessor:
         dataframe = pd.read_csv(file_path)
 
         logging.info('')
-        logging.info(f'Creating the Tag Templates...')
+        logging.info('Creating the Tag Templates...')
         created_tag_templates = self.__create_tag_templates_from_dataframe(dataframe)
 
         logging.info('')
