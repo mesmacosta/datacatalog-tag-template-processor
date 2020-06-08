@@ -23,7 +23,7 @@ class TagTemplateDatasourceProcessor:
 
         logging.info('')
         logging.info('Reading CSV file: %s...', file_path)
-        dataframe = pd.read_csv(file_path)
+        dataframe = pd.read_csv(file_path, comment='#')
 
         logging.info('')
         logging.info('Creating the Tag Templates...')
@@ -45,7 +45,7 @@ class TagTemplateDatasourceProcessor:
 
         logging.info('')
         logging.info('Reading CSV file: %s...', file_path)
-        dataframe = pd.read_csv(file_path)
+        dataframe = pd.read_csv(file_path, comment='#')
 
         logging.info('')
         logging.info('Deleting the Tag Templates...')
@@ -104,6 +104,9 @@ class TagTemplateDatasourceProcessor:
         # Rebuild the dataframe by concatenating the fillable and non-fillable columns.
         rebuilt_df = pd.concat(
             [filled_subset, ordered_df[constant.TAG_TEMPLATES_DS_NON_FILLABLE_COLUMNS]], axis=1)
+
+        # Strip spaces
+        rebuilt_df = rebuilt_df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 
         return rebuilt_df
 

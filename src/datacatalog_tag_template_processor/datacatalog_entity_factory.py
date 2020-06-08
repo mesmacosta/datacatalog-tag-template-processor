@@ -1,5 +1,7 @@
 from google.cloud import datacatalog_v1beta1
 
+from datacatalog_tag_template_processor import constant
+
 
 class DataCatalogEntityFactory:
     __TRUTHS = {1, '1', 't', 'T', 'true', 'True', 'TRUE'}
@@ -18,19 +20,21 @@ class DataCatalogEntityFactory:
 
             tag_template.fields[field_id].display_name = field_display_name
 
-            if field_type == 'BOOL':
+            field_type = field_type.upper()
+
+            if field_type in constant.ALLOWED_BOOL_VALUES:
                 tag_template.fields[field_id].type.primitive_type = \
                     datacatalog_v1beta1.enums.FieldType.PrimitiveType.BOOL.value
-            elif field_type == 'DOUBLE':
+            elif field_type in constant.ALLOWED_DOUBLE_VALUES:
                 tag_template.fields[field_id].type.primitive_type = \
                     datacatalog_v1beta1.enums.FieldType.PrimitiveType.DOUBLE.value
-            elif field_type == 'STRING':
+            elif field_type in constant.ALLOWED_STRING_VALUES:
                 tag_template.fields[field_id].type.primitive_type = \
                     datacatalog_v1beta1.enums.FieldType.PrimitiveType.STRING.value
-            elif field_type == 'TIMESTAMP':
+            elif field_type in constant.ALLOWED_DATETIME_VALUES:
                 tag_template.fields[field_id].type.primitive_type = \
                     datacatalog_v1beta1.enums.FieldType.PrimitiveType.TIMESTAMP.value
-            elif field_type == 'ENUM':
+            elif field_type in constant.ALLOWED_ENUM_VALUES:
                 enum_values = items['enum_values']
                 for enum_value in enum_values:
                     tag_template.fields[field_id].type.enum_type \
