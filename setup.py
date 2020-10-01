@@ -8,7 +8,7 @@ with open('HISTORY.md') as history_file:
 
 setuptools.setup(
     name='datacatalog-tag-template-processor',
-    version='0.1.2',
+    version='0.2.0',
     author='Marcelo Miranda',
     author_email='mesmacosta@gmail.com',
     description='A package to manage Google Cloud Data Catalog'
