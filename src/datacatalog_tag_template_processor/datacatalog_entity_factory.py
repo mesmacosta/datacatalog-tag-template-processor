@@ -14,6 +14,7 @@ class DataCatalogEntityFactory:
 
         fields = tag_template_dict['fields']
 
+        field_order = len(fields)
         for field_id, items in fields.items():
             field_display_name = items['field_display_name']
             field_type = items['field_type']
@@ -39,5 +40,8 @@ class DataCatalogEntityFactory:
                 for enum_value in enum_values:
                     tag_template.fields[field_id].type.enum_type \
                         .allowed_values.add().display_name = enum_value
+
+            tag_template.fields[field_id].order = field_order
+            field_order -= 1
 
         return tag_template
